@@ -1,0 +1,15 @@
+# Ingresar un numero entero
+n = int(input("Ingrese un número: "))
+
+# Este es rango que va de 2 al valor ingresado
+for i in range(2, n + 1):
+    es_primo = True
+
+# Aca verificaremos si tiene divisores entre 2 y i
+    for j in range(2, i):
+        if i % j == 0:
+            es_primo = False
+            break
+
+    # Si es primo, lo mostramos
+    if es_primo:
